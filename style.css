@@ -1,7 +1,21 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   margin: auto;
   font-family: "Mukta", sans-serif;
   background-image: linear-gradient(white, #ebebe0);
+  animation: 1.5s fadeIn;
+}
+
+body.fade-in {
+  animation: 1.5s fadeIn;
 }
 
 #wrapper {
@@ -11,7 +25,7 @@ body {
 
 #nav {
   position: relative;
-  left: 50px;
+  left: 49px;
 }
 
 #header {
